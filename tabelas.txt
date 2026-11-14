@@ -1,0 +1,36 @@
+Tabelas do banco:
+
+autores
+- id_autor (chave primária)
+- nome
+
+categorias
+- id_categoria (chave primária)
+- nome_categoria
+
+livros
+- id_livro (chave primária)
+- titulo
+- ano_publicacao
+- id_autor (chave estrangeira -> autores)
+- id_categoria (chave estrangeira -> categorias)
+
+alunos
+- id_aluno (chave primária)
+- nome
+- turma
+- email
+
+emprestimos
+- id_emprestimo (chave primária)
+- id_livro (chave estrangeira -> livros)
+- id_aluno (chave estrangeira -> alunos)
+- data_emprestimo
+- data_prevista (até quando o aluno deve devolver)
+- data_devolucao (fica vazia se ainda não devolveu)
+
+Ligações:
+- Um autor tem vários livros
+- Uma categoria tem vários livros
+- Um aluno faz vários empréstimos
+- Um livro aparece em vários empréstimos

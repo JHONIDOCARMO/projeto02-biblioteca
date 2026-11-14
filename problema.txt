@@ -1,0 +1,7 @@
+A Biblioteca Central de uma escola empresta livros para os alunos. Hoje o controle é feito em papel. Quero um banco de dados pra guardar os livros, os autores, os alunos e os empréstimos.
+
+O banco precisa responder:
+- Quais livros estão emprestados agora?
+- Quais empréstimos estão atrasados?
+- Quais livros nunca foram emprestados?
+- Qual aluno mais pegou livros?
